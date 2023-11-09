@@ -184,7 +184,7 @@ ul {
 }
 
 .second-navbar-text .first-text button {
-    border: 1px solid var(--text-color);
-    border-radius: 0;
-  }
+  border: 1px solid var(--text-color);
+  border-radius: 0;
+}
 /* /Navbar */
