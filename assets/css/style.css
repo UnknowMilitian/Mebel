@@ -1,0 +1,190 @@
+:root {
+  /* Colors */
+  --main: #002a32;
+  --light-blue: #d2e2ee;
+  --blue: #71b3c6;
+
+  --yellow: #f3b705;
+  --text-color: #264a51;
+  /* /Colors */
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Dance";
+  src: url("../fonts/DancingScript-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Mukta";
+  src: url("../fonts/Mukta-Regular.ttf");
+}
+/* /Fonts */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Dosis";
+  letter-spacing: 0.3rem;
+  color: var(--text-color);
+}
+
+h6,
+p {
+  font-family: "Mukta";
+}
+
+/* Navbar */
+.two-navs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.first-nav {
+  width: 12%;
+  height: 100vh;
+  background-color: var(--main);
+  position: relative;
+}
+
+.first-nav nav .images img {
+  width: 75%;
+  margin: 1.2rem 0rem;
+}
+
+.navbar-content {
+  margin: 1rem 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-content ul {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-content ul li {
+  padding: 0.8rem 0rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-content ul li.active {
+  background-color: var(--blue);
+}
+
+.navbar-content ul li:hover {
+  background-color: var(--blue);
+}
+
+.navbar-content ul .nav-li h5 {
+  font-weight: 300;
+  color: var(--light-blue);
+  margin: 0.5rem 0;
+}
+
+.navbar-content ul .nav-li svg {
+  fill: var(--light-blue);
+  height: 1rem;
+}
+
+/* ////// */
+.second-nav {
+  background-image: url(../images/main-banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  /* padding: 2rem 5rem; */
+}
+
+.second-nav .container {
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.second-nav nav .second-navbar-content .nav-second-ul,
+.second-nav nav .second-navbar-content .nav-second-ul .first-content,
+.second-nav nav .second-navbar-content .nav-second-ul .second-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.second-nav nav .second-navbar-content .nav-second-ul .first-content li,
+.second-nav nav .second-navbar-content .nav-second-ul .second-content li {
+  display: flex;
+  text-transform: uppercase;
+  margin: 0 2.5rem;
+  margin-left: 0;
+  align-items: center;
+  color: var(--text-color);
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.second-nav nav .second-navbar-content .nav-second-ul .first-content li svg,
+.second-nav nav .second-navbar-content .nav-second-ul .second-content li svg {
+  margin: 0rem 0.7rem;
+  fill: white;
+  height: 1.2rem;
+}
+
+.second-navbar-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+  width: 50%;
+}
+
+.second-navbar-text .first-text h5 {
+  font-family: "Dance";
+  letter-spacing: 0.3rem;
+  word-spacing: 0.5rem;
+  text-transform: capitalize;
+
+  margin-bottom: 1rem;
+}
+
+.second-navbar-text .first-text h1 {
+  font-family: "Dosis";
+  word-spacing: 0.7rem;
+  font-weight: 600;
+  font-size: auto;
+  font-size: 2.7rem;
+
+  margin: 1.5rem 0;
+}
+
+.second-navbar-text .first-text button {
+    border: 1px solid var(--text-color);
+    border-radius: 0;
+  }
+/* /Navbar */
