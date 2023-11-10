@@ -275,6 +275,7 @@ ul {
 .products .product .product-details h6,
 .products .product .product-details p {
   margin: 0.2rem 0;
+  font-family: "Mukta";
 }
 
 .products .product .product-details .product-rate {
