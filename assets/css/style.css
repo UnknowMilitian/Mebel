@@ -285,7 +285,11 @@ ul {
 
 /* Blog */
 .blog {
-  background-image: url(../images/banner-2.png);
+  background-image: linear-gradient(
+      rgba(112, 178, 224, 0.5),
+      rgba(86, 108, 122, 0.5)
+    ),
+    url(../images/banner-2.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -374,7 +378,7 @@ ul {
 .diskount {
   background-image: linear-gradient(
       rgba(93, 155, 201, 0.5),
-      rgba(93, 155, 201, 0.5)
+      rgba(41, 52, 60, 0.5)
     ),
     url(../images/banner-2.png);
   background-repeat: no-repeat;
@@ -430,3 +434,49 @@ ul {
 }
 
 /* /Diskount */
+
+/* Footer */
+.footer {
+  padding: 5rem 1rem;
+  color: var(--text-color);
+}
+
+.footer .social__apps svg{
+  fill: var(--text-color);
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.footer .block {
+  background-color: #71b3c6;
+  border-radius: 10px;
+  padding: 1rem;
+  color: white;
+}
+
+.footer .block span {
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.footer ul {
+  align-items: start;
+}
+
+.footer ul li a {
+  color: var(--text-color);
+}
+
+.copyright {
+  background-color: var(--light-blue);
+  margin: 0;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright p {
+  margin: 0;
+}
+/* /Footer */
