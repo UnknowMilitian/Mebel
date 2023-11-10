@@ -281,3 +281,46 @@ ul {
   fill: var(--yellow);
 }
 /* /Products */
+
+/* Blog */
+.blog {
+  background-image: url(../images/banner-2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.blog .content {
+  width: 55%;
+  text-align: center;
+  padding: 0 5rem;
+}
+
+.blog .content h1 span {
+  color: var(--yellow);
+  font-weight: 900;
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.blog .content h1 {
+  color: var(--text-color);
+  font-weight: 900;
+  font-size: 4rem;
+  text-transform: capitalize;
+  margin: 2rem 0;
+}
+
+.blog .content .btn {
+  border: 2px solid var(--text-color);
+  border-radius: 0;
+  padding: 0.5rem 2.3rem;
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+/* /Blog */

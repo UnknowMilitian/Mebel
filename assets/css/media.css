@@ -17,6 +17,20 @@
   .second-navbar-text {
     width: 100%;
   }
+
+  .blog .content {
+    width: 70%;
+  }
+  
+  .blog .content h1 span {
+    font-weight: 700;
+    font-size: 4rem;
+  }
+  
+  .blog .content h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 800px) {
@@ -110,5 +124,20 @@
 
   .second-navbar-text .first-text .btn {
     width: 100%;
+  }
+
+  .blog .content {
+    width: 100%;
+    padding: 0 0;
+  }
+  
+  .blog .content h1 span {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  
+  .blog .content h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
   }
 }
