@@ -67,6 +67,7 @@
     opacity: 1;
     height: auto;
     transition: opacity 0.2s ease-in-out;
+    z-index: 9;
   }
 
   .navbar-content .nav-ul .hide {

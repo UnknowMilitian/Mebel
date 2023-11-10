@@ -2,6 +2,7 @@
   /* Colors */
   --main: #002a32;
   --light-blue: #d2e2ee;
+  --light-background: #f3f3f3;
   --blue: #71b3c6;
 
   --yellow: #f3b705;
@@ -30,6 +31,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: var(--light-background) !important;
 }
 
 h1,
@@ -210,3 +215,69 @@ ul {
   background-color: var(--light-blue);
 }
 /* /Brands */
+
+/* Products */
+.products {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.products h1.products-title {
+  font-weight: 600;
+  font-family: "Dosis";
+}
+
+.products .products-cat__list {
+  margin: 2rem 0;
+}
+
+.products .products-cat__list button {
+  margin: 0.5rem 1rem;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0;
+}
+
+.products .products-cat__list button.active {
+  border: 1px solid var(--main);
+}
+
+.products .product .product-content {
+  background-color: #f1f6f9;
+  padding: 3rem 0rem 1.5rem 0rem;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.products .product .product-content:hover {
+  background-color: var(--light-blue);
+  transform: rotateY(-20px);
+}
+
+.products .product .product-content img {
+  width: 50%;
+}
+
+.products .product .product-content .product-events button.btn {
+  background-color: var(--blue);
+  border-radius: 0;
+  margin: 1rem 0.25rem;
+}
+
+.products .product .product-content .product-events button.btn svg {
+  fill: white;
+}
+
+.products .product .product-details {
+  margin: 1rem 0;
+}
+
+.products .product .product-details h6,
+.products .product .product-details p {
+  margin: 0.2rem 0;
+}
+
+.products .product .product-details .product-rate {
+  fill: var(--yellow);
+}
+/* /Products */
