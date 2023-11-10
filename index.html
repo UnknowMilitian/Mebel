@@ -11,15 +11,28 @@
 
     <!-- Bootsrap -->
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+
+    <!-- Splide -->
+    <link rel="stylesheet" href="./assets/splide/splide.min.css" />
     <title>Greenery - Frontend Project</title>
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- Main banner -->
     <div class="two-navs">
       <div class="first-nav text-center">
         <nav>
           <div class="images">
             <img src="./assets/images/logo.svg" alt="" />
+            <svg
+              class="bar"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
           </div>
           <div class="navbar-content">
             <ul class="nav-ul">
@@ -76,12 +89,60 @@
                 </svg>
                 <h5>Location</h5>
               </li>
+
+              <div class="hide">
+                <li class="nav-li">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                    />
+                  </svg>
+                  <h5>Login</h5>
+                </li>
+                <li class="nav-li">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+                    />
+                  </svg>
+                  <h5>Sign Up</h5>
+                </li>
+                <li class="nav-li">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                    />
+                  </svg>
+                  <h5>Maining List</h5>
+                </li>
+                <li class="nav-li">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z"
+                    />
+                  </svg>
+                  <h5>Share List</h5>
+                </li>
+                <li class="nav-li">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                    />
+                  </svg>
+                  <h5>Cart</h5>
+                </li>
+              </div>
             </ul>
           </div>
         </nav>
       </div>
       <div class="second-nav">
-        <div class="container">
+        <div class="ctn">
           <nav>
             <div class="second-navbar-content">
               <ul class="nav-second-ul">
@@ -166,9 +227,56 @@
         </div>
       </div>
     </div>
-    <!-- Navbar -->
+    <!-- Main banner -->
+
+    <!-- Brands -->
+    <div class="brands py-2">
+      <div class="splide">
+        <div class="container mx-auto">
+          <div class="splide__track">
+            <div
+              class="splide__list d-flex flex-row align-items-center"
+            >
+              <div class="splide__slide text-center">
+                <div class="img_box">
+                  <img src="./assets/images/icon.svg" alt="" />
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img src="./assets/images/brand-1.svg" alt="" />
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img src="./assets/images/brand-2.svg" alt="" />
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img src="./assets/images/brand-3.svg" alt="" />
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img src="./assets/images/brand-4.svg" alt="" />
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="img_box">
+                  <img src="./assets/images/brand-5.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Brands -->
 
     <!-- Bootsrap -->
     <script src="./assets/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/splide/splide.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>

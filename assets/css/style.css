@@ -45,7 +45,7 @@ p {
   font-family: "Mukta";
 }
 
-/* Navbar */
+/* Main Banner */
 .two-navs {
   display: flex;
   flex-direction: row;
@@ -64,6 +64,13 @@ p {
   margin: 1.2rem 0rem;
 }
 
+.first-nav nav .images svg {
+  fill: white;
+  height: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
 .navbar-content {
   margin: 1rem 0;
 }
@@ -80,6 +87,14 @@ ul {
 
   display: flex;
   flex-direction: column;
+}
+
+.navbar-content .nav-ul .hide {
+  display: none;
+}
+
+.navbar-content .nav-ul .hide.show {
+  display: block;
 }
 
 .navbar-content ul li {
@@ -118,9 +133,10 @@ ul {
   /* padding: 2rem 5rem; */
 }
 
-.second-nav .container {
+.second-nav .ctn {
   margin: 0 auto;
   padding: 0 5rem;
+  width: 100%;
 }
 
 .second-nav nav .second-navbar-content .nav-second-ul,
@@ -187,4 +203,10 @@ ul {
   border: 1px solid var(--text-color);
   border-radius: 0;
 }
-/* /Navbar */
+/* /Main Banner */
+
+/* Brands */
+.brands {
+  background-color: var(--light-blue);
+}
+/* /Brands */
