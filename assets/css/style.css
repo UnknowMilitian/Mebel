@@ -325,3 +325,108 @@ ul {
   text-transform: capitalize;
 }
 /* /Blog */
+
+/* Rooms */
+.rooms {
+  padding: 5rem 0;
+}
+
+.rooms .room h1 {
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+.rooms .room p {
+  color: var(--text-color);
+  font-weight: 100;
+}
+
+.rooms .room button {
+  border-radius: 0;
+  color: var(--text-color);
+  border: 2px solid var(--main);
+  margin: 1rem 0;
+  padding: 0.5rem 3rem;
+}
+
+.rooms .room .mobile {
+  display: none;
+  background-color: var(--light-blue);
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.rooms .room .mobile img {
+  width: 100%;
+  height: 100%;
+}
+
+.rooms .room .mobile .text {
+  padding: 0rem 2rem;
+}
+
+.rooms .room img {
+  cursor: pointer;
+}
+/* /Rooms */
+
+/* Diskount */
+.diskount {
+  background-image: linear-gradient(
+      rgba(93, 155, 201, 0.5),
+      rgba(93, 155, 201, 0.5)
+    ),
+    url(../images/banner-2.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.diskount .content {
+  width: 100%;
+  text-align: center;
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.diskount .content h1 {
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 1.5rem 0;
+}
+
+.diskount .content p {
+  color: white;
+  margin: 1.5rem 0;
+}
+
+.diskount .content .box .input-group {
+  width: 50%;
+}
+
+.diskount .content .box input {
+  background-color: var(--light-blue);
+  border-radius: 25px;
+  padding: 0.7rem 1rem;
+}
+
+.diskount .content .box .input-group-text {
+  background-color: var(--main);
+  color: white;
+  border: 0;
+  border-radius: 25px !important;
+  padding: 0.6rem 2rem;
+  cursor: pointer;
+
+  position: relative;
+  left: -1.2rem;
+  z-index: 9;
+}
+
+/* /Diskount */
