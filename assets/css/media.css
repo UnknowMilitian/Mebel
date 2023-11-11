@@ -69,7 +69,7 @@
     overflow: hidden;
     opacity: 0;
     height: 0;
-    position: absolute;
+    position: relative;
     width: 100%;
     margin: 0;
     background-color: var(--main);
@@ -163,6 +163,18 @@
 
   .footer .social__apps {
     margin-bottom: 2rem;
+  }
+
+  button.dk-btn {
+    border-radius: 0;
+    background-color: var(--text-color);
+    color: white;
+
+    display: inline-block;
+    padding: 12px 15px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s all ease;
   }
 }
 

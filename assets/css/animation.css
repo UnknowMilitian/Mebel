@@ -1,0 +1,58 @@
+/* Button Animation */
+
+button.dk-btn {
+  border-radius: 0;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+
+  display: inline-block;
+  padding: 12px 15px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s all ease;
+}
+
+button.dk-btn::before {
+  color: white;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+  background-color: var(--text-color);
+  border: 2px solid var(--text-color);
+  transition: 0.3s all ease;
+}
+
+button.dk-btn:hover {
+  color: white;
+}
+
+button.dk-btn:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+
+/* /Button Animation */
+
+/* Elment Animation */
+.element-animation {
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -webkit-animation: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.element-animation.element-show{
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+/* /Elment Animation */
