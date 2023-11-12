@@ -63,3 +63,58 @@ for (let elm of elements) {
   observer.observe(elm);
 }
 // /IntersectionObserver
+
+// Modals
+let modalImg = document.querySelectorAll(".image-modal");
+let closeBtn = document.querySelectorAll(".close");
+
+modalImg.forEach(function (img) {
+  img.onclick = function () {
+    let modal = img.getAttribute("data-modal");
+
+    document.getElementById(modal).style.display = "block";
+  };
+});
+
+closeBtn.forEach(function (btn) {
+  btn.onclick = function () {
+    let modal = btn.getAttribute("data-target");
+
+    document.getElementById(modal).style.display = "none";
+  };
+});
+// /Modals
+
+// Filter
+let filterBtns = document.querySelectorAll(".products-cat__list button");
+let filterProducts = document.querySelectorAll(".products .product");
+
+for (let i = 0; i < filterBtns.length; i++) {
+  filterBtns[i].addEventListener("click", filterProduct);
+}
+
+function setActiveBtn(e) {
+  filterBtns.forEach((btn) => {
+    btn.classList.remove("btn-clicked");
+  });
+
+  e.target.classList.add("btn-clicked");
+}
+
+function filterProduct(e) {
+  setActiveBtn(e);
+
+  filterProducts.forEach((product) => {
+    product.classList.remove("product-shrink");
+    product.classList.add("product-expand");
+
+    const productType = parseInt(product.dataset.product);
+    const btnType = parseInt(e.target.dataset.btn);
+
+    if (productType != btnType) {
+      product.classList.remove("product-expand");
+      product.classList.add("product-shrink");
+    }
+  });
+}
+// /Filter

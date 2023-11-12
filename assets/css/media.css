@@ -31,6 +31,19 @@
     font-weight: 700;
     font-size: 2.5rem;
   }
+
+  /* Modal Content */
+  .modal {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+  }
+
+  .modal-content-product {
+    margin: 20vh auto;
+    padding: 10px 20px 10px 0px;
+    width: 70%;
+  }
+  /* /Modal Content */
 }
 
 @media only screen and (min-width: 200px) and (max-width: 800px) {
@@ -176,6 +189,27 @@
     z-index: 1;
     transition: 0.5s all ease;
   }
+
+  .modal-content-product {
+    padding: 10px;
+    width: 85%;
+  }
+  
+
+  .modal-content-product .content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .modal-content-product .content img{
+    margin: 0 auto;
+  }
+
+  .modal-content-product .content .text {
+    margin-top: 1rem;
+  }  
 }
 
 @media only screen and (min-width: 575px) {
