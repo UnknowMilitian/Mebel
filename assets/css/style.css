@@ -69,9 +69,10 @@ p {
   position: relative;
 }
 
-.first-nav nav .images img {
-  width: 75%;
+.first-nav nav .images h2 {
   margin: 1.2rem 0rem;
+  color: white;
+  text-transform: uppercase;
 }
 
 .first-nav nav .images svg {
@@ -82,7 +83,7 @@ p {
 }
 
 .navbar-content {
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 
 ul {
@@ -522,6 +523,11 @@ ul {
 .footer {
   padding: 5rem 1rem;
   color: var(--text-color);
+}
+
+.footer h2 {
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .footer .social__apps svg {
