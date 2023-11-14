@@ -55,143 +55,79 @@ p {
   font-family: "Mukta";
 }
 
-/* Main Banner */
-.two-navs {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.first-nav {
-  width: 12%;
-  height: 100vh;
-  background-color: var(--main);
-  position: relative;
-}
-
-.first-nav nav .images h2 {
-  margin: 1.2rem 0rem;
-  color: white;
-  text-transform: uppercase;
-}
-
-.first-nav nav .images svg {
-  fill: white;
-  height: 1.5rem;
-  cursor: pointer;
-  display: none;
-}
-
-.navbar-content {
-  margin: 3rem 0;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.navbar-content ul {
-  margin: 0;
-  padding: 0;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.navbar-content .nav-ul .hide {
-  display: none;
-}
-
-.navbar-content .nav-ul .hide.show {
-  display: block;
-}
-
-.navbar-content ul li {
-  padding: 0.8rem 0rem;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-.navbar-content ul li.active {
-  background-color: var(--blue);
-}
-
-.navbar-content ul li:hover {
-  background-color: var(--blue);
-}
-
-.navbar-content ul .nav-li h5 {
-  font-weight: 300;
-  color: var(--light-blue);
-  margin: 0.5rem 0;
-}
-
-.navbar-content ul .nav-li svg {
-  fill: var(--light-blue);
-  height: 1rem;
-}
-
-/* ////// */
-.second-nav {
+/* Main Banner */
+.main-banner {
   background-image: url(../images/main-banner.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 100vh;
-  /* padding: 2rem 5rem; */
 }
 
-.second-nav .ctn {
-  margin: 0 auto;
-  padding: 0 5rem;
-  width: 100%;
+.main-banner .ctn {
+  padding: 3rem 7rem;
+  height: 100%;
 }
 
-.second-nav nav .second-navbar-content .nav-second-ul,
-.second-nav nav .second-navbar-content .nav-second-ul .first-content,
-.second-nav nav .second-navbar-content .nav-second-ul .second-content {
+.main-banner .ctn nav {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-banner .ctn .logo h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: auto 0;
+}
+
+.main-banner .ctn nav ul {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin: 1rem 0;
-  padding: 0;
+  margin: auto 0;
 }
 
-.second-nav nav .second-navbar-content .nav-second-ul .first-content li,
-.second-nav nav .second-navbar-content .nav-second-ul .second-content li {
+.main-banner .ctn nav ul li {
+  margin: 0 2rem;
   display: flex;
-  text-transform: uppercase;
-  margin: 0 2.5rem;
-  margin-left: 0;
   align-items: center;
-  color: var(--text-color);
-  font-weight: 500;
+}
 
+.main-banner .ctn nav ul li.bar {
+  display: none;
+  margin: 0;
+}
+
+.main-banner .ctn nav ul li.bar svg {
+  fill: var(--text-color);
+}
+
+.main-banner .ctn nav ul li span {
+  text-transform: uppercase;
+  font-weight: 500;
   cursor: pointer;
 }
 
-.second-nav nav .second-navbar-content .nav-second-ul .first-content li svg,
-.second-nav nav .second-navbar-content .nav-second-ul .second-content li svg {
-  margin: 0rem 0.7rem;
+.main-banner .ctn nav ul li svg,
+.main-banner .ctn .hidden ul li svg {
   fill: white;
-  height: 1.2rem;
+  margin: 0 1rem;
+  height: 1.5rem;
 }
 
-.second-navbar-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10rem;
+.navbar-text {
   width: 50%;
+  margin: 20vh 0;
 }
 
-.second-navbar-text .first-text h5 {
+.navbar-text h5.navbar-title {
   font-family: "Dance";
   letter-spacing: 0.3rem;
   word-spacing: 0.5rem;
@@ -200,7 +136,7 @@ ul {
   margin-bottom: 1rem;
 }
 
-.second-navbar-text .first-text h1 {
+.navbar-text h1.navbar-description {
   font-family: "Dosis";
   word-spacing: 0.7rem;
   font-weight: 600;
@@ -209,6 +145,46 @@ ul {
 
   margin: 1.5rem 0;
 }
+
+.navbar-text button {
+  padding: 0.7rem 1.7rem;
+}
+
+.hidden {
+  background-color: var(--main);
+  width: 17rem;
+  height: auto;
+  z-index: 10;
+  margin: 0 -5rem;
+  position: absolute;
+  top: 100px;
+  color: var(--light-background);
+  text-transform: capitalize;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.hidden.show {
+  opacity: 1;
+  visibility: visible;
+  margin: 0rem 0rem;
+
+}
+
+.hidden ul {
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+.hidden ul li {
+  background-color: var(--text-color);
+  margin: 0.5rem 0;
+  padding: 1rem 0;
+  border: 1px solid var(--main);
+  cursor: pointer;
+}
+/* /Main Banner */
 
 /* Brands */
 .brands {
@@ -248,16 +224,16 @@ ul {
   color: white;
 }
 
-.products .product{
+.products .product {
   opacity: 1;
   transition: all 0.5s;
 }
 
-.products .product.product-expand{
+.products .product.product-expand {
   display: block;
 }
 
-.products .product.product-shrink{
+.products .product.product-shrink {
   display: none;
 }
 

@@ -1,6 +1,5 @@
-const navbarBar = document.querySelector(".bar");
-const navbarContent = document.querySelector(".navbar-content");
-const navbarHide = document.querySelector(".hide");
+const navbarBar = document.querySelector(".bar svg");
+const navbarContent = document.querySelector(".hidden");
 
 navbarBar.addEventListener("click", () => {
   navbarContent.classList.toggle("show");
