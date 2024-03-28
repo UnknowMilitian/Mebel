@@ -63,7 +63,7 @@ ul {
 
 /* Main Banner */
 .main-banner {
-  background-image: url(../images/main-banner.png);
+  background-image: url(../images/main-banner.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -169,7 +169,6 @@ ul {
   opacity: 1;
   visibility: visible;
   margin: 0rem 0rem;
-
 }
 
 .hidden ul {
@@ -356,7 +355,7 @@ ul {
       rgba(112, 178, 224, 0.5),
       rgba(86, 108, 122, 0.5)
     ),
-    url(../images/banner-2.png);
+    url(../images/banner-2.webp);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -440,7 +439,7 @@ ul {
       rgba(93, 155, 201, 0.5),
       rgba(41, 52, 60, 0.5)
     ),
-    url(../images/banner-2.png);
+    url(../images/banner-2.webp);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
